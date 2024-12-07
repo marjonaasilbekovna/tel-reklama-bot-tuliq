@@ -9,6 +9,6 @@ async def start_command(message:Message):
     telegram_id = message.from_user.id
     try:
         db.add_user(full_name=full_name,telegram_id=telegram_id) 
-        await message.answer(text="Assalomu alaykum hurmatli foydalanuvchi.\nTelefonlar uchun reklama botimizga hush kelibsiz. Siz telefon uchun reklama bermoqchi bo'lsangiz 'Reklama qo'shish +' tugmasini bosing 👇🏻", reply_markup=add)
+        await message.answer(text=f"Assalomu alaykum {full_name}\n Hurmatli foydalanuvchi.\nTelefonlar uchun reklama botimizga hush kelibsiz. Bu bot sizga telefoningizni ishonchli sota olishingizni ta'minlaydi. \n\nSiz telefon uchun reklama bermoqchi bo'lsangiz 'Reklama qo'shish +' tugmasini bosing 👇🏻", reply_markup=add)
     except:
-        await message.answer(text="Assalomu alaykum hurmatli foydalanuvchi.\nTelefonlar uchun reklama botimizga hush kelibsiz. Siz telefon uchun reklama bermoqchi bo'lsangiz 'Reklama qo'shish +' tugmasini bosing 👇🏻", reply_markup=add)
+        await message.answer(text=f"Assalomu alaykum {full_name} \nHurmatli foydalanuvchi.\nTelefonlar uchun reklama botimizga hush kelibsiz. Bu bot sizga telefoningizni ishonchli sota olishingizni ta'minlaydi. \n\nSiz telefon uchun reklama bermoqchi bo'lsangiz 'Reklama qo'shish +' tugmasini bosing 👇🏻", reply_markup=add)

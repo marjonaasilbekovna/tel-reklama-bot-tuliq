@@ -12,3 +12,9 @@ ask = InlineKeyboardMarkup(
         [InlineKeyboardButton(text="Ha", callback_data="yes"), InlineKeyboardButton(text="Yo'q", callback_data="no")]
     ]
 )
+
+yana = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [InlineKeyboardButton(text="Reklama berish", callback_data="yana")]
+    ]
+)

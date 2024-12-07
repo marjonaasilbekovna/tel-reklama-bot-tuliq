@@ -6,7 +6,7 @@ from aiogram.fsm.context import FSMContext
 
 @dp.message(Command("xabar"))
 async def help_commands(message:Message,state:FSMContext):
-    await message.answer("Xabaringizni yozib qoldiring ✍🏻 \nMurojatingiz 👤 adminga boradi !\nva adminimiz siz bilan albatta bog'lanadi")
+    await message.answer("Xabaringizni yozib qoldiring ✍🏻 \nMurojatingiz 👤 adminga boradi !\nva adminimiz siz bilan albatta bog'lanadi.")
     await state.set_state(Help.help)
 
 @dp.message(Help.help)
